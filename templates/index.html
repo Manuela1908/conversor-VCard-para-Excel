@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Contatos para MoveChat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="{{ url_for('static', filename='movechat.png') }}" alt="movechat" class="logo">
+                <h1>Conversor de Contatos para Importação</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="instructions">
+                <h2>Como Exportar Contatos do Seu Celular</h2>
+                <div class="instruction">
+                    <h3>Passos para Exportação Iphone:</h3>
+                    <ol>
+                        <li>Abra o aplicativo <strong>Contatos</strong> no seu iPhone.</li>
+                        <li>Vá para <strong>Configurações</strong> > toque no seu nome no topo da tela.</li>
+                        <li>Toque em <strong>iCloud</strong> e ative a opção <strong>Contatos</strong>.</li>
+                        <li>No seu computador, abra <a href="https://www.icloud.com" target="_blank">iCloud.com</a> e faça login.</li>
+                        <li>Selecione <strong>Contatos</strong> e escolha os contatos desejados.</li>
+                        <li>Clique no ícone de engrenagem e selecione <strong>Exportar vCard</strong>.</li>
+                        <li>O arquivo <strong>.vcf</strong> será baixado para o seu computador.</li>
+                    </ol>
+                </div>
+
+                <div class="instruction">
+                    <h3>Passos para Exportação Android</h3>
+                    <ol>
+                        <li>Abra o aplicativo <strong>Contatos</strong> no seu dispositivo Android.</li>
+                        <li>Toque no menu de três pontos no canto superior esquerdo e selecione <strong>Gerenciar Contatos</strong>.</li>
+                        <li>Escolha <strong>Exportar Contatos</strong> e <strong>Armazenamento Interno</strong></li>
+                        <li>O arquivo <strong>.vcf</strong> será salvo no armazenamento interno ou no cartão SD.</li>
+                        <li>Transfira o arquivo para o seu computador.</li>
+                    </ol>
+                </div>
+            </section>
+            <section class="upload">
+                <h2>Como Gerar o Arquivo Excel</h2>
+                <p>1. Selecione o arquivo VCF exportado.</p>
+                <p>2. Clique no botão abaixo para fazer o upload do arquivo.</p>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file" accept=".vcf" required>
+                    <button class="gerar" type="submit">Gerar Arquivo Excel</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <h1>Após gerar o arquivo, acesse o menu <strong>Contatos</strong>, clique na opção <strong>Importar</strong>, e <strong>Importar Excel</strong></h1>
+        <img src="{{ url_for('static', filename='importar.PNG') }}" alt="importar" class="logo">
+        <p>&copy; 2024 Pauta Telecomunicações. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

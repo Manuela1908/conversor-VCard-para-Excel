@@ -1,0 +1,123 @@
+/* Estilização geral */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-image: linear-gradient(to left, rgb(255, 153, 0), rgb(19, 19, 224));
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content .logo {
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.header-content h1 {
+    font-size: 2em;
+    color: #007bff;
+    margin: 0;
+}
+
+/* Estilização do main */
+main {
+    margin-bottom: 20px;
+}
+
+/* Bloco de instruções */
+.instructions h2, .upload h2 {
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.instruction {
+    margin-bottom: 40px;
+}
+
+.instruction h3 {
+    color: #007bff;
+    font-size: 1.2em;
+}
+
+.instruction ol {
+    margin-left: 20px;
+}
+
+.upload form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+}
+
+.upload input[type="file"] {
+    margin-bottom: 15px;
+}
+
+.upload button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px; /* Ajuste o padding para melhor aparência */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start; /* Alinha o botão à esquerda do contêiner pai */
+}
+
+.upload button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilização da mensagem */
+.message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.error {
+    color: #e74c3c;
+}
+
+.success {
+    color: #2ecc71;
+}
+
+/* Estilização do footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #777;
+    background-color: #f0f2f5;
+}
+
+footer h1{
+    margin: 0vh 40vh 10vh 40vh;
+}
