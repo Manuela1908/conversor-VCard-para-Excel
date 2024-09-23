@@ -56,8 +56,3 @@ O conversor suporta dados comuns de contatos, como nome, telefone, e-mail, ender
 
 ### O que fazer se o arquivo VCF estiver corrompido ou não for aceito?
 Verifique se o arquivo VCF está no formato correto e não está corrompido. Certifique-se de que o arquivo segue o padrão vCard 2.1 ou 3.0.
-
-## Contato
-Para suporte adicional ou perguntas, entre em contato com a equipe de suporte:
-
-- E-mail: tecnico@pautatelecom.com.br
